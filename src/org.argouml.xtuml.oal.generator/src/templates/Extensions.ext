@@ -1,0 +1,4 @@
+import org::argouml::xtuml::oAL;
+
+sortedGreetings(Model this) :
+	this.greetings.sortBy(g|g.name.toLowerCase());

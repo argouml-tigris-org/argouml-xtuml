@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.argouml.xtuml.oal
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0
+Bundle-SymbolicName: org.argouml.xtuml.oal; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.generator;resolution:=optional,
+ org.apache.commons.logging;resolution:=optional,
+ org.eclipse.emf.codegen.ecore;resolution:=optional,
+ org.eclipse.emf.mwe.utils;resolution:=optional,
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
+ com.ibm.icu;resolution:=optional,
+ org.eclipse.xtext.xtend;resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.argouml.xtuml,
+ org.argouml.xtuml.services,
+ org.argouml.xtuml.oAL,
+ org.argouml.xtuml.oAL.impl,
+ org.argouml.xtuml.oAL.util,
+ org.argouml.xtuml.parseTreeConstruction,
+ org.argouml.xtuml.parser.antlr,
+ org.argouml.xtuml.parser.antlr.internal,
+ org.argouml.xtuml.validation
