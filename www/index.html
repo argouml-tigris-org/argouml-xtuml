@@ -13,107 +13,53 @@
 </head>
 <body>
 
-<p>This is the initial web content for your project.  Please customize
-this to fit your project.  You don't need to answer all these questions
-or follow this exact format, but we do like to see this kind of
-information in any project.
-</p>
-
-<p>Your project is visible to all users now, so &quot;putting on a good face&quot; by fixing up this page might be your first priority.
-</p>
-
-<ul>
-<li>This index.html will be used if and only if you have the "Use
-Project Home Page" option checked on the "Administer Project" page
-(click the "Admin" tab).</li>
-
-<li>To edit this file, check out your project via Subversion and edit trunk/www/index.html.
-
-<li>You can 'svn add' and commit other files under the project's "www"
-directory and they will published to your project web site.</li>
-
-<li>Also, consider starting a thread in the "dev" mailing list to get
-these discussion started.  A good one is an "introduction" thread where
-people post messages about themselves and their interest in the
-project.</li>
-
-<li>You can add a "Highlights:" line to the top of all web pages by adding a file www/project_highlights.html </Li>
-</ul>
-
-
 <h3>Mission</h3>
 
-<p>What is the goal of this project?
+<p>Provide building of xtuml models and oal editing from within ArgoUML.
 </p>
 
-<p>What is the scope of this project?
+<h3>Progress</h3>
+
+<p>Sofar only some experiments with oal editing, not yet within ArgoUML or ArgoEclipse.
 </p>
 
-<p>For example:</p>
 
+<h3>To set up</h3>
 <ul>
-<li>Develop just enough functionality to scratch a particular itch</li>
-<li>Build a tool just like XYZ, but less broken</li>
-<li>Build the best XYZ-tool ever!</li>
+<li>Add Eclipse extensions from update site http://download.itemis.com/updates. 
+It is a compilation of required extensions.
+Install all latest versions!</li>
+<li>Import project set files from 
+<a href="http://argouml.tigris.org/psf/argouml-xtuml.psf">argouml-xtuml.psf</a>.</li>
+<li>Find GenerateOAL.mwe2 
+in project org.argouml.xtuml.oal, 
+src org.argouml.xtuml. 
+Run As MWE2 Workflow.</li>
+<li>Run project org.argouml.xtuml.oal as Eclipse Application.</li>
+<li>Create a file named filename.oal and edit it to see the xtext magic
+(Problems, Ctrl-Space, Outline).</li>
 </ul>
 
 
-<p>What are high-level features you are sure to build?
+<h3>Source layout</h3>
+
+<p>
+Since this project consists of several Eclipse projects,
+they are located in the src directory in the project.
 </p>
-<ul>
-
-<li>What would you write on a billboard about your project? Users
-might only look for a few seconds.</li>
-
-<li>Use the issue tracker to track features and enhancement
-requests. It is not just for bugs, pre-populate it with feature
-descriptions so that potential contributors know what you would like them
-to work on.</li>
-</ul>
-
-<p>What are the high-level assumptions or ground rules for the project?
-</p>
-
-<p>For example:
-</p>
-
-<ul>
-<li> we will use programming language X on operating system Y for now.
-
-<li>We will, or will not, consider certain functional areas like
-internationalization, high security, concurrency, etc.  The list of
-functional areas will depend on what you are trying to do.
-
-<li>Try to keep this part short.
-</ul>
 
 
 <h3>Related resources</h3>
 
-<p>Eclipse packages:</p>
 <ul>
-<li>http://download.eclipse.org/modeling/tmf/updates/releases</li>
-<li>Itemis - http://download.itemis.com/updates</li>
+<li><a href="">Xtext</a> is used to create the Eclipse editor of oal</li>
+<li><a href="http://argouml.tigris.org/">ArgoUML</a> is the tool 
+that provides the UML features.</li>
+<li><a href="http://argoeclipse.tigris.org/">ArgoEclipse</a> 
+variant of ArgoUML will most likely be used to make it possible
+to integrate Xtext and ArgoUML.</li>
 </ul>
 
-<p>
-Find GenerateOAL.mwe2 in project org.argouml.xtuml.oal, src org.argouml.xtuml. Run As MWE2 Workflow.
-</p>
-
-<p>
-Run project org.argouml.xtuml.oal as Eclipse Application.
-</p>
-
-<ul>
-<li>Link to other stuff that you know about.  It will help you
-research requirements and provide a useful resource to potential
-contributors.</li>
-
-<li>Why reinvent the wheel? What is better about this wheel?  Is there
-any existing project that you can partner with or reuse?</li>
-
-<li>Where would you go to try to find potential contibutors?</li>
-</ul>
 
 </body>
 </html>
