@@ -47,7 +47,13 @@ lvalue: // Saknas records
 
 flow_control_statement returns TypeStatement:
 	({TypeStatementIf} 'if' expr=expression 'then' 
-	   (substatements+=statement)* 
+	   (substatements+=statement)*
+	 ('elif' elifexpr+=expression 'then'
+       (substatements+=statement)*	   
+	 )*
+	 ('else'
+       (substatements+=statement)*
+	 )?   
 	 'end' 'if')
 	| ({TypeStatementFor} 'for' lvalue 'of' list=name 'do' 
 	     (substatements+=statement)* 
