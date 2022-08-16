@@ -1,3 +1,4 @@
-# UUID         	Group Name
+# UUID                 	Group Name
 #
-user:linustolke	user/Linus Tolke (linustolke)
+global:Registered-Users	Registered Users
+user:linustolke        	user/Linus Tolke (linustolke)
